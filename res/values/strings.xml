@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Home</string>
+    <string name="header_text">Please select what you want to control</string>
+    <string name="light_1">Light 1:</string>
+    <string name="light_2">Light 2:</string>
+    <string name="light_3">Light 3:</string>
+    <string name="fan">Fan:</string>
+    <string name="tv">Television:</string>
+    <string name="ok">Add</string>
+    <string name="connect">Connect</string>
+    <string name="device_name">Device Name</string>
+    <string name="copyright">©Wait_and_See™</string>
+    <string name="actionbar">Smart Home</string>
+    <string name="about">About</string>
+    <string name="details">This android application is created by AbakSwpno. Using this app you would be able to control all the devices you have hooked up to your bluetooth controller (e.g fan, light, tv etc.) Having a range of control of about 100m. Enjoy it!</string>
+
+</resources>

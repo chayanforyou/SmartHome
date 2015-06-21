@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/headertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/header_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#555" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/fan"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/fan"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/light1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/fan"
+            android:layout_below="@+id/toggleButton1"
+            android:layout_marginTop="15dp"
+            android:text="@string/light_1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toggleButton1"
+            android:layout_alignTop="@+id/light1" />
+
+        <TextView
+            android:id="@+id/light2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/light1"
+            android:layout_below="@+id/toggleButton2"
+            android:layout_marginTop="15dp"
+            android:text="@string/light_2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toggleButton2"
+            android:layout_alignTop="@+id/light2" />
+
+        <TextView
+            android:id="@+id/light3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/light2"
+            android:layout_below="@+id/toggleButton3"
+            android:layout_marginTop="15dp"
+            android:text="@string/light_3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toggleButton3"
+            android:layout_alignTop="@+id/light3" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/light3"
+            android:layout_below="@+id/toggleButton4"
+            android:layout_marginTop="15dp"
+            android:text="@string/tv"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toggleButton4"
+            android:layout_alignTop="@+id/tv" />
+
+        <EditText
+            android:id="@+id/bluetoothName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/toggleButton5"
+            android:layout_alignStart="@+id/toggleButton5"
+            android:layout_alignTop="@+id/button1"
+            android:hint="@string/device_name" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv"
+            android:layout_below="@+id/toggleButton5"
+            android:layout_marginTop="20dp"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginStart="10dp"
+            android:text="@string/connect" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="@string/copyright"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#555" />
+    </RelativeLayout>
+
+</LinearLayout>
